@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Confirmed | Sunset Retreats</title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17871816282"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17871816282');
+  </script>
+  <!-- Google Ads Conversion Event: Purchase -->
+  <script>
+    gtag('event', 'conversion', {
+      'send_to': 'AW-17871816282/iGJmCJ7bpJwcENqM-clC',
+      'value': 1.0,
+      'currency': 'GBP',
+      'transaction_id': ''
+    });
+  </script>
+
+  <!-- Meta Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '878414505157964');
+    fbq('track', 'PageView');
+    fbq('track', 'Purchase', { value: 1.00, currency: 'GBP' });
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=878414505157964&ev=Purchase&noscript=1"/>
+  </noscript>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cream: #F5F0E8;
+      --cream-mid: #EDE7D9;
+      --cream-dark: #DDD5C4;
+      --ink: #2A2720;
+      --ink-mid: #6B6358;
+      --ink-light: #A09888;
+    }
+
+    body {
+      font-family: 'Jost', sans-serif;
+      background: var(--cream);
+      color: var(--ink);
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 1.5rem;
+    }
+
+    .logo { margin-bottom: 3rem; }
+    .logo img { height: 52px; width: auto; }
+
+    .card { max-width: 480px; width: 100%; text-align: center; }
+
+    .label {
+      font-size: 0.65rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      font-weight: 400;
+      margin-bottom: 1.25rem;
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.8rem;
+      font-weight: 300;
+      line-height: 1.15;
+      color: var(--ink);
+      margin-bottom: 1.5rem;
+    }
+
+    h1 em { font-style: italic; font-weight: 300; }
+
+    .divider {
+      width: 40px;
+      height: 1px;
+      background: var(--cream-dark);
+      margin: 0 auto 1.5rem;
+    }
+
+    .body-text {
+      color: var(--ink-mid);
+      font-size: 0.9rem;
+      line-height: 1.8;
+      margin-bottom: 2.5rem;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1px;
+      background: var(--cream-dark);
+      border: 1px solid var(--cream-dark);
+      margin-bottom: 2.5rem;
+    }
+
+    .info-cell { background: var(--cream); padding: 1.25rem 1rem; text-align: center; }
+
+    .info-cell-label {
+      font-size: 0.6rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      display: block;
+      margin-bottom: 0.4rem;
+    }
+
+    .info-cell-value {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem;
+      font-weight: 400;
+      color: var(--ink);
+    }
+
+    .source-block {
+      border: 1px solid var(--cream-dark);
+      padding: 1.75rem;
+      margin-bottom: 2.5rem;
+      text-align: left;
+    }
+
+    .source-question {
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--ink-mid);
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .source-options {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .source-btn {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 400;
+      color: var(--ink);
+      background: var(--cream-mid);
+      border: 1px solid var(--cream-dark);
+      border-radius: 4px;
+      padding: 0.75rem 1rem;
+      cursor: pointer;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      transition: all 0.15s;
+      width: 100%;
+    }
+
+    .source-btn:hover {
+      border-color: var(--ink-light);
+      background: var(--cream-dark);
+    }
+
+    .source-btn.selected {
+      background: var(--ink);
+      color: var(--cream);
+      border-color: var(--ink);
+    }
+
+    .source-btn.selected .radio-dot {
+      border-color: var(--cream);
+      background: var(--cream);
+    }
+
+    .radio-dot {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      border: 1.5px solid var(--ink-light);
+      flex-shrink: 0;
+      transition: all 0.15s;
+    }
+
+    .source-thanks {
+      font-size: 0.78rem;
+      color: var(--ink-light);
+      margin-top: 1rem;
+      text-align: center;
+      display: none;
+    }
+
+    .cta {
+      display: inline-block;
+      font-size: 0.68rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--ink);
+      text-decoration: none;
+      border: 1px solid var(--ink);
+      padding: 0.75rem 2rem;
+      font-weight: 400;
+      transition: all 0.2s;
+      margin-bottom: 2rem;
+    }
+
+    .cta:hover { background: var(--ink); color: var(--cream); }
+
+    .footer-note { font-size: 0.78rem; color: var(--ink-light); }
+
+    .footer-note a {
+      color: var(--ink-mid);
+      text-decoration: none;
+      border-bottom: 1px solid var(--cream-dark);
+    }
+
+    .footer-note a:hover { color: var(--ink); }
+  </style>
+</head>
+
+<body>
+
+  <div class="logo">
+    <img src="https://www.sunsetretreats.co.uk/wp-content/uploads/2020/05/Final-3-e1752599718384.png" alt="Sunset Retreats" />
+  </div>
+
+  <div class="card">
+    <p class="label">Booking Confirmed</p>
+
+    <h1>Your escape <em>awaits.</em></h1>
+
+    <div class="divider"></div>
+
+    <p class="body-text">
+      Your booking is confirmed and we can't wait to welcome you.
+      A confirmation email is on its way with everything you need ahead of your stay.
+    </p>
+
+    <div class="info-grid">
+      <div class="info-cell">
+        <span class="info-cell-label">Check-in</span>
+        <span class="info-cell-value">15:00</span>
+      </div>
+      <div class="info-cell">
+        <span class="info-cell-label">Check-out</span>
+        <span class="info-cell-value">10:00</span>
+      </div>
+      <div class="info-cell">
+        <span class="info-cell-label">Questions</span>
+        <span class="info-cell-value" style="font-size:0.72rem; font-family:'Jost',sans-serif; color: var(--ink-mid);">sunsetretreatsglamping@outlook.com</span>
+      </div>
+    </div>
+
+    <div class="source-block">
+      <p class="source-question">How did you find us?</p>
+      <div class="source-options">
+        <button class="source-btn" onclick="submitSource(this, 'Facebook')"><span class="radio-dot"></span>Facebook</button>
+        <button class="source-btn" onclick="submitSource(this, 'Instagram')"><span class="radio-dot"></span>Instagram</button>
+        <button class="source-btn" onclick="submitSource(this, 'Google')"><span class="radio-dot"></span>Google</button>
+        <button class="source-btn" onclick="submitSource(this, 'Website')"><span class="radio-dot"></span>Website</button>
+        <button class="source-btn" onclick="submitSource(this, 'Other')"><span class="radio-dot"></span>Other</button>
+      </div>
+      <p class="source-thanks" id="source-thanks">Thanks for letting us know.</p>
+    </div>
+
+    <a href="https://www.sunsetretreats.co.uk" class="cta">Return to Website</a>
+
+    <p class="footer-note">
+      Need to make changes? Email us at
+      <a href="mailto:sunsetretreatsglamping@outlook.com">sunsetretreatsglamping@outlook.com</a>
+    </p>
+  </div>
+
+  <script>
+    const SHEET_URL = 'https://script.google.com/macros/s/AKfycbyhIYvLPE3og-kQw4sVJK3yB0TqTVM7rKP6RydFB4LHwLUFMqb2QtoGPea8DFJ-8vZjVA/exec';
+
+    function submitSource(btn, source) {
+      document.querySelectorAll('.source-btn').forEach(b => {
+        b.classList.remove('selected');
+        b.disabled = true;
+      });
+      btn.classList.add('selected');
+      document.getElementById('source-thanks').style.display = 'block';
+
+      fetch(SHEET_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ source: source })
+      });
+    }
+  </script>
+
+</body>
+</html>

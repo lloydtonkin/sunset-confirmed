@@ -12,15 +12,7 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'AW-17871816282');
-  </script>
-  <!-- Google Ads Conversion Event: Purchase -->
-  <script>
-    gtag('event', 'conversion', {
-      'send_to': 'AW-17871816282/iGJmCJ7bpJwcENqM-clC',
-      'value': 1.0,
-      'currency': 'GBP',
-      'transaction_id': ''
-    });
+    // Conversion fires only when user selects Google in the survey below
   </script>
 
   <!-- Meta Pixel -->
@@ -302,6 +294,16 @@
       });
       btn.classList.add('selected');
       document.getElementById('source-thanks').style.display = 'block';
+
+      // Only fire Google Ads conversion if user came via Google
+      if (source === 'Google') {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-17871816282/iGJmCJ7bpJwcENqM-clC',
+          'value': 1.0,
+          'currency': 'GBP',
+          'transaction_id': ''
+        });
+      }
 
       fetch(SHEET_URL, {
         method: 'POST',
